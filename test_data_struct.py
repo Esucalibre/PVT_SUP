@@ -167,7 +167,10 @@ def test_ss_list(website_url:str, ss_list:list, driver):
             special, type_find = type_find.split(":")
             special_list = special.split["~"]
         except:
-            pass
+            try:
+                    special_list=special
+            except:
+                pass
         print(count)
         count+=1
         #input()
@@ -218,13 +221,15 @@ def test_ss_list(website_url:str, ss_list:list, driver):
             print("FAILED TO GET ELEMENT AFTER RETRIES")
             break
         time.sleep(2)
+    #elements = driver.find_elements("class name", "second_list_item")
+    #print(elements)
     input("OUT")
 
 if __name__ == "__main__":
     c_driver = create_edge_driver(ublock=True, headless=False)
     #c_driver = create_chrome_driver(ublock=True, headless=False)
-    website_to_test = "https://www.lenovo.com"
-    seleniumsselector_list = ["partial link text;SMART DEVICES"] # "refresh_sens:id;guide-icon", "relies_prev:partial link text;Trending"
+    website_to_test = "https://www.instel.com/"#, 'rand_ind:class name;second_list_item', 'rand_ind:class name;three_list_item'
+    seleniumsselector_list = ['partial link text;Small Business Solutions', 'rand_ind:class name;resource_oneline'] # "refresh_sens:id;guide-icon", "relies_prev:partial link text;Trending"
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
     #test_struct("https://www.lenovo.com/ca/en/")
     pass
