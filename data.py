@@ -62,26 +62,44 @@ WEBSITE_LIST = {"https://www.intel.com":
                  "main_menu":'refresh_sens:id;guide-icon',
                  "endpoints":
                  { 
-                  'Products'
-                  'Support'
-                  'Solutions'
-                  'Developers'
-                  'Partners'
+                  'Products':'partial link text;Products',
+                  'Support':'partial link text;Support',
+                  'Gaming':'direct-link;/content/www/us/en/gaming/serious-gaming.html',
+                  'Developers':'direct-link;/content/www/us/en/developer/overview.html',
+                  'Partners':'direct-link;/content/www/us/en/partner-alliance/overview.html'
                  },
                   "sub-endpoints":
                   {
-                      "main_menu":{"trending":'relies_prev:partial link text;Trending',
-                                   "music":   'relies_prev:partial link text;Music',
-                                   "gaming":  'relies_prev:partial link text;Gaming',
-                                   "news":    'relies_prev:partial link text;News',
-                                   "sports":  'relies_prev:partial link text;Sports',
-                                   "learning":'relies_prev:partial link text;Learning'
+                        
+                        "Products":{"Intel Xeon Scalable Processors":'relies_prev~refresh_sens:partial link text;Intel® Xeon® Scalable Processors',
+                                    "Intel Xeon Platinum Processors":'relies_prev~refresh_sens:partial link text;Intel® Xeon® Platinum Processors',
+                                    "Intel xeon Platinum Blade Item":'relies_prev:rand_ind:class name;blade-item-heading',
+
+                                    },
+                        "Products":{"Intel Xeon Processors":'refresh_sens:partial link text;Intel® Xeon® Processors',
+                                    "Intel Xeon Cpu Max Processors":'relies_prev:partial link text;Intel® Xeon® CPU Max Series',
+                                    "Intel Xeon Cpu Product Brief":'partial link text;Product brief: Intel® Xeon® CPU Max Series ›',
+
+                                    },
+                        "Support":{"Specifications":'partial link text;Specifications',
+                                   "Company Overview":'partial link text;Company Overview',
+                                   "Our Values":'partial link text;Our Values',
+
                                    },
-                      "trending":{"video":'rand_ind:css selector;ytd-video-renderer'
-                                  },
-                      "music":{"video":'rand_ind:css selector;ytd-video-renderer'
-                               },
-                      "gaming":{"video":"rand_ind:css selector;ytd-video-renderer"
+                        "Gaming":{"Fix High CPU Usage":'relies_prev:partial link text;How to Fix High CPU Usage',
+                                  "Choose Gaming CPU":'relies_prev:partial link text;How to Choose a Gaming CPU',
+                                  "Gaming Desktop":'relies_prev:partial link text;gaming desktop',
+                                  "Get The Details":'relies_prev:partial link text;Get the details',
+
+                                    },
+                        "Developers":{"Programs":'relies-prev:partial link text;Programs',
+                                      "Program Catagory":'relies_prev~rand_ind:class name;content-media',
+                                
+                                    },
+                        "Partners":{"Partner Learn More":'relies_prev:partial link text;Learn more'
+                                
+                        },
+                        },
                           
                       },
                   }
