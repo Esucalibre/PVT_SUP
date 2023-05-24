@@ -228,8 +228,8 @@ def test_ss_list(website_url:str, ss_list:list, driver):
 if __name__ == "__main__":
     c_driver = create_edge_driver(ublock=True, headless=False)
     #c_driver = create_chrome_driver(ublock=True, headless=False)
-    website_to_test = "https://www.instel.com/"#, 'rand_ind:class name;second_list_item', 'rand_ind:class name;three_list_item'
-    seleniumsselector_list = ['partial link text;Small Business Solutions', 'rand_ind:class name;resource_oneline'] # "refresh_sens:id;guide-icon", "relies_prev:partial link text;Trending"
+    website_to_test = "https://www.intel.com" #, 'rand_ind:class name;second_list_item', 'rand_ind:class name;three_list_item'
+    seleniumsselector_list =['direct-link;/content/www/us/en/partner-alliance/overview.html','relies_prev:partial link text;Learn more'] # "refresh_sens:id;guide-icon", "relies_prev:partial link text;Trending"
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
     #test_struct("https://www.lenovo.com/ca/en/")
-    pass
+    
