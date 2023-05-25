@@ -96,9 +96,83 @@ WEBSITE_LIST = {"https://www.intel.com":
                                       "Program Catagory":'relies_prev~rand_ind:class name;content-media',
                                 
                                     },
-                        "Partners":{"Partner Learn More":'relies_prev:partial link text;Learn more'
+                        "Partners":{"Partner Learn More":'relies_prev:partial link text;Learn more',
+                                    "Join Intel":'relies_prev:partial link text;Join the Intel® Partner Alliance',
+                                    "Terms of Servicec":"relies_prev:partial link text;Terms of Service",
                                 
+                                    },
                         },
+                          
+                      },
+                  }
+
+
+WEBSITE_LIST = {"https://www.uber.com":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "See How":'partial link text;See how',
+                  "Help":'partial link text;Help',
+                  "Random Endpoint From Home":'rand_ind:css selector;.css-fwsLmT',
+                  "Random Endpoint2":'rand_ind:css selector;.css-qNlYD'
+
+                 },
+                  "sub-endpoints":
+                  {
+                      "See How":{"How to Get Started":'relies_prev:partial link text;How to get started',
+                                 "Corporate Traveler":'relies_prev:partial link text;Read the article',  
+                                 "Get Started":'relies_prev:partial link text;VGet started',   
+                                 "Visit Help Center":'Visit Help Center'     
+                                  },
+                      "Help":{"Random support":'relies_prev~rand_ind:css selector;._dr',
+                              "Random Sub Tab":'rand_ind:css selector;._jh',
+                              },
+                      "Random Endpoint From Home":{"Random Sub endpoint1":'relies_prev~rand_ind:css selector;.css-fwsLmT',
+                                                   "Random Sub endpoint2":'relies_prev~rand_ind:css selector;.css-fwsLmT',
+                                                  }
+                        },
+                          
+                      },
+                  }
+
+WEBSITE_LIST = {"https://www.python.org":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "Top Bar":'rand_ind:css selector;.top-bar li',
+                  "Nav Bar":'rand_ind:id;mainnav',
+                  "Sub Nav Bar":'rand_ind:css selector;.sitemap .subnav',
+                 },
+                  "sub-endpoints":
+                  {
+                      "Top Bar":{"Random Top Bar Sub-endpoint":'rand_ind~relies_prev:css selector;a:-webkit-any-link',
+                                  },
+                      "Nav Bar":{"Random Top Bar Sub-endpoint":'rand_ind~relies_prev:css selector;a:-webkit-any-link',
+                                  },
+                      "Sub Nav Bar":{"link to nav bar":'rand_ind:css selector;.sitemap .subnav',
+                                     },
+                        },
+                          
+                      },
+                  }
+
+WEBSITE_LIST = {"https://www.askubuntu.com":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "Home Bar":'rand_ind:css selector;.truncate',
+                  "Random Post":'rand_ind:css selector;.s-post-summary .s-post-summary--content-title a',
+
+                 },
+                  "sub-endpoints":
+                  {
+                      "Random Post":{"Home Bar redirect":'rand_ind:css selector;.truncate',
+                                  },
+                      
+                                     },
                         },
                           
                       },
