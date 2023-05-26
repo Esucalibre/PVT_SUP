@@ -165,17 +165,56 @@ WEBSITE_LIST = {"https://www.askubuntu.com":
                  { 
                   "Home Bar":'rand_ind:css selector;.truncate',
                   "Random Post":'rand_ind:css selector;.s-post-summary .s-post-summary--content-title a',
-
+                  "Random footer link":'rand_ind:css selector;.site-footer .-list'
                  },
                   "sub-endpoints":
                   {
                       "Random Post":{"Home Bar redirect":'rand_ind:css selector;.truncate',
-                                  },
+                                     "Ask Question":'relies_prev:partial link text;Ask Question',
+                                    },
                       
-                                     },
-                        },
-                          
+                    },
+                  },
+                 },
+
+WEBSITE_LIST = {"https://www.ieee.org":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "Random Header Bar":'rand_ind:css selector;.site-navigation .main-menu',
+                  "Random top nav bar":'id;util-left',
+                  "Sign-up Page":'css selector;.site-navigation a.btn-blue',
+                  },
+                  "sub-endpoints":
+                  {
+                    "Sign-up Page":{'relies_prev~rand_ind:css selector;.link-list li a',
+                                    }
+                      
                       },
+                    },
+                  },
+              
+WEBSITE_LIST = {"https://www.cisco.com":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "Random quick task":'rand_ind:class name;cds-c-quicktasks__item',
+                  "Random top bar nav":'rand_ind:css selector;.fw-c-header__tophat .fw-c-header__button',
+
+                 },
+                  "sub-endpoints":
+                  {
+                      "Random top bar nav":{"top bar link":'rand_ind:css selector;.fw-c-header__dropdown a, .fw-c-header__dropdown a:active, .fw-c-header__dropdown a:visited',
+                                     
+                                     
+                                    },
+                      
+                    },
+                  },
+                 },
+                 
 
                  
                 
