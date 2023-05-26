@@ -193,7 +193,9 @@ WEBSITE_LIST = {"https://www.ieee.org":
                       
                       },
                     },
+                    #awful site
                   },
+
               
 WEBSITE_LIST = {"https://www.cisco.com":
                  {"specifics":"ablock=true;",
@@ -213,8 +215,146 @@ WEBSITE_LIST = {"https://www.cisco.com":
                       
                     },
                   },
+                  #awful site
                  },
-                 
 
+WEBSITE_LIST = {"https://www.tomshardware.com/":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "Best Picks":'partial link text;Best Picks',
+                  "Raspberry Pi":'partial link text;Raspberry Pi',
+                  "CPUs":'partial link text:CPUs',
+                  "GPUs":'partial link text:GPUs',
+                  "Coupons":'partial link text:Coupons'
+                 },
+                  "sub-endpoints":
+                  {
+                      "Best Picks":{"Random Article":'relies_prev:css selector;.listingResult .article-name'
+                          
+                      },
+                      "Raspberry Pi":{"Random Article":'relies_prev:css selector;.listingResult .article-name'
+                          
+                      },
+                      "CPUs":{"Random Article":'relies_prev:css selector;.listingResult .article-name'
+                          
+                      },
+                      "GPUs":{"Random Article":'relies_prev:css selector;.listingResult .article-name'
+                          
+                      },
+                      "Coupons":{"View all":'relies_prec~rand_ind:css selector;.fa, .fa-stack, .fa:after, .fa:before'
+                          
+                      },
+
+                  },
+                  },
+                 },
+
+WEBSITE_LIST = {"https://www.eventbrite.ca/?_gl=1*ram3vq*_up*MQ..&gclid=EAIaIQobChMI4bei-Z-T_wIV1i7UAR3CHwphEAAYASAAEgLuA_D_BwE&gclsrc=aw.ds":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "Random trending":'rand_ind:css selector;.tile',  
+                  "Sitemap":'partial link text;Sitemap',
+                  "Pricing":'partial link text;Pricing',
+                  "Event Payment System":'partial link text;Event Payment System',
+                  "Contact Support":'partial link text;Contact Support'
+
+                 },
+                  "sub-endpoints":
+                  {
+                      "Sitemap":{'partial link text;About Us'
+                                    },
+                      "Sitemap":{'partial link text;Contact Us'
+                      },
+                      "Sitemap":{'partial link text;Impact'
+                          
+                      },
+                      "Contact Support":{'partial link text;terms of service'
+                      },
+                       "Contact Support":{'partial link text;privacy policy'
+                      },
+
+                      
+                    },
+                  },
+                 },               
+    
+WEBSITE_LIST = {"https://www.latimes.com/":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "California":'partial link text;California',
+                  "Entertainment":'partial link text;Entertainment',
+                  "Sports":'partial link text;Sports',
+                  "Food":'partial link text;food',
+                  "Climate":'partial link text;Climate',
+                  "Image":'partial link text;Image',
+                  "Opinion":'partial link text;Opinion',
+
+                 },
+                  "sub-endpoints":
+                  {
+                      "California":{"Random cali article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+                      "Entertainment":{"Random entertainment article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+                      "Sports":{"Random Sports article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+                      "Food":{"Random Food article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+                      "Climate":{"Random climate article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+                      "Image":{"Random Image article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+                      "Opinion":{"Random Opinion article":'relies_prev~rand_ind:css selector;.promo-small .promo-title'
+                                    },
+
+                  },
+                  },
+                 },
+
+WEBSITE_LIST = {"https://www.timeanddate.com/":
+                 {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;guide-icon',
+                 "endpoints":
+                 { 
+                  "World Clock":'partial link text;World Clock',
+                  "Time Zones":'partial link text;Time Zones',
+                  "Calendar":'partiall ink text;Calendar',
+                  "Weather":'partial link text;Weather',
+                  "Sun & Moon":'partial link text;Sun & Moon'
+                 },
+                  "sub-endpoints":
+                  {
+                      "World Clock":{"Daylight Savings":'partial link text;Daylight Saving Time',
+                                    "Random Daylight article":'relies_prev~rand_ind:class name;blk-series__item'
+                                    },
+                      "Time Zones":{"Time Zone Map":'partial link text;Time Zone Map',
+                                    "UTC":'partial link text;Coordinated Universal Time (UTC)'
+                                    
+                                    },
+                      "Calendar":{"Gregorian calendar":'partial link text;Gregorian calendar',
+                                  "Calendar History":'relies_prev~rand_ind:class name;blk-series__item'
+                                    
+                                    },
+                      "Weather":{"Weather Terms":'relies_prev:partial link text;Weather words and terminology',
+                                 "Jumplist":'relies_prev~rand_ind:css selector;.jumplist'
+                          
+                                    },
+                      "Sun & Moon":{"Sky Tonight":'partial link text;The Sky Tonight',
+                                   },
+                       "Sun & Moon":{"planets and stuff":'partial link text;Planets: Distance, Size & Brightness',
+                                     "Planets":'relies_prev~rand_ind:class name;planet-links'
+                                    },
+                    },
+                  },
+                 },     
+
+                 
+    
                  
                 
